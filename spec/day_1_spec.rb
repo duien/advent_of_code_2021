@@ -17,7 +17,16 @@ RSpec.describe Day1::Part1 do
   end
 
   subject { described_class.new(input) }
-  it "correctly counts increases in test input" do
-    expect(subject.run).to eq(7)
+  describe Day1::Part1 do
+    it "correctly counts increases in test input" do
+      expect(subject.run).to eq(7)
+    end
   end
+
+  describe Day1::Part2 do
+    it "correctly counts increasing windows" do
+      expect(subject.run).to eq(5)
+    end
+  end
+
 end
