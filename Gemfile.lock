@@ -1,0 +1,33 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    autotest-standalone (4.5.11)
+    diff-lcs (1.4.4)
+    rspec (3.10.0)
+      rspec-core (~> 3.10.0)
+      rspec-expectations (~> 3.10.0)
+      rspec-mocks (~> 3.10.0)
+    rspec-autotest (1.0.2)
+      rspec-core (>= 2.99.0.beta1, < 4.0.0)
+    rspec-core (3.10.1)
+      rspec-support (~> 3.10.0)
+    rspec-expectations (3.10.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-mocks (3.10.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.10.0)
+    rspec-support (3.10.3)
+    thor (1.1.0)
+
+PLATFORMS
+  x86_64-darwin-20
+
+DEPENDENCIES
+  autotest-standalone
+  rspec
+  rspec-autotest
+  thor
+
+BUNDLED WITH
+   2.2.3

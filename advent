@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+require 'bundler'
+
+Bundler.require
+Dir["lib/*.rb"].map { |f| require_relative f }
+
+class Advent < Thor
+  desc "day DAY PART", "run the thing for a day"
+  def day(day_num, part_num)
+    problem = Kernel.const_get("Day#{day_num}::Part#{part_num}")
+    puts problem.new.run
+  end
+
+  desc "test [NUM]", "run the specs for a day"
+  def test(num)
+
+  end
+end
+
+Advent.start
