@@ -17,7 +17,8 @@ class Advent < Thor
     files.each do |file|
       template = File.read(file)
       output = template.gsub("N", day_num)
-      File.open(file.gsub("N", day_num), "w") do |out|
+      outfile = file.gsub("N", day_num).gsub(".template", "")
+      File.open(outfile, "w") do |out|
         out.puts output
       end
     end
