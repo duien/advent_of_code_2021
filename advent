@@ -11,9 +11,16 @@ class Advent < Thor
     puts problem.new.run
   end
 
-  desc "test [NUM]", "run the specs for a day"
-  def test(num)
-
+  desc "create DAY", "create files for day from template"
+  def create(day_num)
+    files = Dir["**/*.template"]
+    files.each do |file|
+      template = File.read(file)
+      output = template.gsub("N", day_num)
+      File.open(file.gsub("N", day_num), "w") do |out|
+        out.puts output
+      end
+    end
   end
 end
 

@@ -1,0 +1,15 @@
+require_relative "../lib/day_N"
+
+RSpec.describe DayN do
+  let(:input) do
+    <<~DATA
+    DATA
+  end
+
+  subject { described_class.new(input) }
+
+  describe DayN::Part1 do
+    it "..." do
+
+    end
+  end

@@ -1,0 +1,13 @@
+require_relative "problem"
+module DayN
+  class Part1 < Problem
+    @day = N
+
+    def process(input)
+        super
+    end
+
+    def run
+    end
+  end
+end
