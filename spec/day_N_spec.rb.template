@@ -13,3 +13,4 @@ RSpec.describe DayN do
 
     end
   end
+end
