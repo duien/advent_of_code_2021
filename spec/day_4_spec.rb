@@ -43,6 +43,12 @@ RSpec.describe Day4 do
 
   end
 
+  describe Day4::Part2 do
+    it "finds the score for the last winning board" do
+      expect(subject.run).to eq(1924)
+    end
+  end
+
   describe Day4::Board do
     let(:input) do
       <<~DATA

@@ -54,4 +54,21 @@ module Day4
       winner.score
     end
   end
+
+  class Part2 < Part1
+    @day = 4
+
+    def run
+      winning_turns = boards.inject({}) do |tracker, board|
+        calls = draws.each.with_index
+        i = nil # this feels gross
+        until board.winner?
+          call, i = calls.next
+          board.mark(call)
+        end
+        tracker.update(i => board.score)
+      end
+      winning_turns[winning_turns.keys.max]
+    end
+  end
 end
