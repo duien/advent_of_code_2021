@@ -52,7 +52,6 @@ RSpec.describe Day5 do
     end
 
     it "counts points on multiple lines" do
-      subject.visualize
       expect(subject.run).to eq(12)
     end
   end
