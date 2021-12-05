@@ -10,4 +10,8 @@ module DayN
     def run
     end
   end
+
+  class Part2 < Part1
+    @day = N
+  end
 end

@@ -44,6 +44,7 @@ RSpec.describe Day5 do
       points = [{x:3,y:3},{x:2,y:2},{x:1,y:1}]
       expect(subject.covered_points(*line)).to eq(points)
     end
+
     it "counts diagonal points leaning" do
       line = [{x:1,y:3},{x:3,y:1}]
       points = [{x:1,y:3},{x:2,y:2},{x:3,y:1}]

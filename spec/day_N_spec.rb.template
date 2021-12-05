@@ -13,4 +13,10 @@ RSpec.describe DayN do
 
     end
   end
+
+  describe DayN::Part2 do
+    it "..." do
+
+    end
+  end
 end
