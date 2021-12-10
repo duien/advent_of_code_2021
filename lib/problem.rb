@@ -7,7 +7,7 @@ class Problem
   end
 
   def process(input)
-    input.strip.lines
+    input.strip.lines.map(&:strip)
   end
 
   def run

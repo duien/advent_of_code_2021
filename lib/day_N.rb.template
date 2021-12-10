@@ -4,7 +4,7 @@ module DayN
     @day = N
 
     def process(input)
-        super
+      super
     end
 
     def run
