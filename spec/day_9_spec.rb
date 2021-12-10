@@ -24,8 +24,12 @@ RSpec.describe Day9 do
   end
 
   describe Day9::Part2 do
-    it "..." do
+    it "finds all the basins" do
+      expect(subject.heightmap.basins.count).to eq(4)
+    end
 
+    it "finds the basin extent product" do
+      expect(subject.run).to eq(1134)
     end
   end
 end
