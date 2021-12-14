@@ -38,8 +38,8 @@ RSpec.describe Day14 do
   end
 
   describe Day14::Part2 do
-    it "..." do
-
+    it "calculates polymerization checksum" do
+      expect(subject.run).to eq(2188189693529)
     end
   end
 end
