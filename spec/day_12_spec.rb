@@ -26,6 +26,7 @@ RSpec.describe Day12 do
       path = ["start"]
       expect(subject.valid_continuation("A", path)).to be true
     end
+
     it "counts valid paths" do
       expect(subject.run).to eq(36)
     end

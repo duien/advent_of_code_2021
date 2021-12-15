@@ -31,7 +31,6 @@ RSpec.describe Day13 do
 
   describe Day13::Part1 do
     it "counts dots after the first fold" do
-      pending "make it work"
       expect(subject.run).to eq(17)
     end
   end
