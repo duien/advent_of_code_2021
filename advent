@@ -1,8 +1,12 @@
 #!/usr/bin/env ruby
 require 'bundler'
 
+# Disable warning about one-line pattern matching
+Warning[:experimental] = false
+
 Bundler.require
 Dir["lib/*.rb"].map { |f| require_relative f }
+
 
 class Advent < Thor
   desc "day DAY PART", "run the thing for a day"
